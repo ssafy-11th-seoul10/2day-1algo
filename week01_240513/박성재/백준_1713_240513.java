@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.nio.Buffer;
 import java.util.*;
 
-public class 240513_백준_1713 {
+public class 백준_1713_240513 {
     static class Hubo implements Comparable<Hubo>{
         int num;
         int index;
