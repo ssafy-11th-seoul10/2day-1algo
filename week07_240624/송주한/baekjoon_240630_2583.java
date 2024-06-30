@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 
 public class baekjoon_240630_2583 {
-
+     
 	static int dx[] = {0,0,1,-1};
 	static int dy[] = {1,-1,0,0};
 	static int count;
@@ -22,7 +22,7 @@ public class baekjoon_240630_2583 {
 		int k = Integer.parseInt(st.nextToken());
 		
 		square = new boolean[n][m];
-		
+		    
 		for(int i=0; i<k; i++) {
 			st = new StringTokenizer(in.readLine());
 			int x1 = Integer.parseInt(st.nextToken());
