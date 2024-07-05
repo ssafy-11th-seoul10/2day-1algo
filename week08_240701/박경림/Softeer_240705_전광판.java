@@ -7,7 +7,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());
         StringTokenizer st;
-        int[] num = new int[10];
+        byte[] num = new byte[10];
         initArr(num);
         // System.out.println(Arrays.toString(num));
         int result = 0;
@@ -21,12 +21,12 @@ public class Main {
                 int al = a % 10;
                 int bl = b % 10;
                 if (a == 0) {
-                    for (int i = 1; i < 7; i++) {
+                    for (int i = 1; i <= 7; i++) {
                         if ((num[bl] & (1 << i)) != 0)
                             result++;
                     }
                 } else if (b == 0) {
-                    for (int i = 1; i < 7; i++) {
+                    for (int i = 1; i <= 7; i++) {
                         if ((num[al] & (1 << i)) != 0)
                             result++;
                     }
@@ -44,7 +44,7 @@ public class Main {
         System.out.println(sb);
     }
 
-    private static void initArr(int[] arr) {
+    private static void initArr(byte[] arr) {
         for (int i = 0; i < 10; i++) {
             if (i == 1 || i == 4) continue;
             arr[i] |= (1 << 1);
