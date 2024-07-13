@@ -21,7 +21,5 @@ name="박상욱"
 
 git commit -m "$name\_$file_name"
   
-done
-
 # 변경 사항을 원격 저장소로 푸시합니다.
 git push
