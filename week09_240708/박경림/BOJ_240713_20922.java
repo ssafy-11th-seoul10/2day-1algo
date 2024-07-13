@@ -14,7 +14,6 @@ public class Main {
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-
         Map<Integer, Integer> map = new HashMap<>();
         int result = 0;
         int start = 0;
